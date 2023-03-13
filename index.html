@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-box">
+        <h1>Geometry Calculator</h1>
+
+        <div class="form-box-div">
+
+            <div class="input-styles">
+
+                <label>Radius</label>
+                <input type="number" id="radius-input" firstname="fradius" />
+
+            </div>
+
+            <br />
+
+            <div class="input-styles">
+
+                <label>Small Line Length</label>
+                <input type="number" id="small-length-input" firstname="fsll" />
+
+            </div>
+
+            <br />
+
+            <div class="input-styles">
+
+                <label>Big Line Length</label>
+                <input type="number" id="big-length-input" firstname="fbll" />
+
+            </div>
+
+            <br />
+
+            <div class="input-styles-2">
+                <input id="submit-button" class="submit-button-class" type="button" name="Calculate" value="Calculate" label="C" />
+            </div>
+            <div class="result">
+                <p id="result-title">Degree is :</p>
+                <p id="result-degree"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./geometry-calculator.js"></script>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #000000;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #434343, #000000);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #434343, #000000);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .form-box {
+            background-color: white;
+            padding: 5%;
+            border-radius: 5%;
+            height: 60%;
+            width: 50%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: xxx-large;
+        }
+
+        input {
+            border-radius: 5px;
+            height: 50px;
+            font-size: larger;
+            width: 31%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .input-styles {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .input-styles-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input.submit-button-class {
+            background: #0d730d;
+            color: white;
+            font-family: ui-sans-serif;
+            font-size: 3vh;
+            border-radius: 13px;
+            width: 50%;
+            cursor: grab;
+        }
+
+        label {
+            font-size: xx-large
+        }
+
+        .result {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: 1px solid #00800099;
+            border-radius: 10px;
+            box-shadow: 3px 3px 1px #00000080;
+            margin-top: 5%;
+        }
+
+        p#result-title {
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        p#result-degree {
+            font-size: xx-large;
+            font-weight: bold;
+            color: #03ad03;
+            text-shadow: 0px 1px black;
+        }
+
+        input.submit-button-class:hover {
+            scale: 1.05;
+        }
+
+    </style>
+
+</body>
+
+</html>
